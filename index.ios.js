@@ -45,12 +45,14 @@ const styles = StyleSheet.create({
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    margin: 40,
   },
   instructions: {
-    textAlign: 'center',
+    textAlign: 'left',
     color: '#333333',
-    marginBottom: 5,
+    marginBottom: 20,
+	marginLeft:20,
+	marginRight:20,
   },
 });
 
