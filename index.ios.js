@@ -17,14 +17,18 @@ export default class react_test extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Hello World!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
+          This is the return value of the render() method of the
+		  class react_test. It's some kind of xml-like structure.
+		  (Look at index.ios.js)
         </Text>
         <Text style={styles.instructions}>
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
+		  Enable live reload so that the app gets automatically reloaded
+		  when I save this file
         </Text>
       </View>
     );
