@@ -9,31 +9,34 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
+
+class Simplicity extends Component {
+	render() {
+		let pic = {
+			uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
+		};
+		return (
+				<Image source={pic} style={{width: 193, height: 110}}/>
+			   );
+	}
+}
+AppRegistry.registerComponent('Bananas', () => Bananas);
 
 export default class react_test extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Hello World!
-        </Text>
-        <Text style={styles.instructions}>
-          This is the return value of the render() method of the
-		  class react_test. It's some kind of xml-like structure.
-		  (Look at index.ios.js)
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-		  Enable live reload so that the app gets automatically reloaded
-		  when I save this file
-        </Text>
+		<Image
+			source={require('./TPOP.jpg')}
+		/>
       </View>
     );
   }
 }
+
 
 const styles = StyleSheet.create({
   container: {
