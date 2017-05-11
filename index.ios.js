@@ -13,25 +13,24 @@ import {
   Image
 } from 'react-native';
 
-class Simplicity extends Component {
-	render() {
-		let pic = {
-			uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
-		};
-		return (
-				<Image source={pic} style={{width: 193, height: 110}}/>
-			   );
-	}
+class Bananas extends Component {
+  render() {
+    let pic = {
+    uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
+    };
+    return (
+            <Image source={pic} style={{width: 193, height: 110}}/>
+            );
+  }
 }
-AppRegistry.registerComponent('Bananas', () => Bananas);
 
-export default class react_test extends Component {
+
+class react_test extends Component {
   render() {
     return (
       <View style={styles.container}>
-		<Image
-			source={require('./TPOP.jpg')}
-		/>
+            <Text> Hello mother, hello father </Text>
+            <Bananas />
       </View>
     );
   }
@@ -60,3 +59,5 @@ const styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('react_test', () => react_test);
+
+// AppRegistry.registerComponent('Banannas', () => react_test);
