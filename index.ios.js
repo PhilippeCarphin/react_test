@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  StyleSheet,
   Text,
   View,
   Image
@@ -18,9 +17,7 @@ react_test = () => (
       </View>
 )
 
-
-
-const styles = StyleSheet.create({
+const styles = {
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -39,7 +36,7 @@ const styles = StyleSheet.create({
 	marginLeft:20,
 	marginRight:20,
   },
-});
+};
 
 AppRegistry.registerComponent('react_test', () => react_test);
 
