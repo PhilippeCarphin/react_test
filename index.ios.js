@@ -39,17 +39,14 @@ class Figure extends Component {
   }
 }
 
-export default class react_test extends Component {
-  render() {
-    return (
+react_test = () => (
       <View style={styles.container}>
             <Text> Hello mother, hello father </Text>
             <Bananas />
             <Figure caption="This is the caption" filename='./TPOP.jpg'/>
       </View>
-    );
-  }
-}
+)
+
 
 
 const styles = StyleSheet.create({
