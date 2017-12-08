@@ -6,38 +6,24 @@ import {
   Image
 } from 'react-native';
 
-import Figure from './src/Figure';
-import Bananas from './src/Bananas';
+import RandomThing from './src/RandomThing.js'
+
 
 react_test = () => (
-      <View style={styles.container}>
-            <Text> Hello mother, hello father </Text>
-            <Bananas />
-            <Figure caption="This is the caption" filename='./TPOP.jpg'/>
-      </View>
+  <View style={styles.view_style}>
+      <RandomThing/>
+      <Text>'=========='</Text>
+      <RandomThing/>
+  </View>
 )
 
 const styles = {
-  container: {
+  view_style: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 40,
-  },
-  instructions: {
-    textAlign: 'left',
-    color: '#333333',
-    marginBottom: 20,
-	marginLeft:20,
-	marginRight:20,
-  },
+    backgroundColor: '#F5D0FF',
+  }
 };
 
 AppRegistry.registerComponent('react_test', () => react_test);
-
-// AppRegistry.registerComponent('Banannas', () => react_test);
