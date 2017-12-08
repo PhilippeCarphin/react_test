@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -14,17 +8,7 @@ import {
 } from 'react-native';
 
 import Figure from './src/Figure';
-
-class Bananas extends Component {
-  render() {
-    let pic = {
-    uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
-    };
-    return (
-            <Image source={pic} style={{width: 193, height: 110}}/>
-            );
-  }
-}
+import Bananas from './src/Bananas';
 
 react_test = () => (
       <View style={styles.container}>
